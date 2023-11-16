@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
+{{!-- Rendering image through main.handlebars due to 
+routing conflicts when importing from style.css
+This is currently bugged and does not work on the Projects page --}}
 <style>
   .backgroundImage {
   background-image: url("assets/placeholder.png");
@@ -17,6 +20,7 @@
   height: 100%;
   background-size: cover;
   position: fixed;
+  z-index: 0;
 }
 </style>
 
@@ -32,7 +36,7 @@
   {{!-- LOGIN --}}
   <div class="loginBlock">
     {{#if logged_in}}
-      <a href="/profile"><h1 class="accountButton">Account</h1></a>
+      <a href="/profile"><h2 class="accountButton">Account</h2></a>
       <button id="logout" class="logoutButton">logout</button>
     {{else}}
       <a href="/login"><h1 class="loginHomeButton">Log In!</h1></a>
@@ -41,7 +45,9 @@
 
   {{!-- RENDER START --}}
   <main class="container container-fluid">
-    {{{body}}}
+    <div class="pt-5">
+      {{{body}}}
+    </div>
   </main>
   {{!-- RENDER END --}}
 
