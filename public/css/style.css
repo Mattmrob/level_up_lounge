@@ -1,7 +1,3 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-}
-
 :root {
   /* COLOR VARIABLE NAMES */
   --primary-lighter: #58586b;
@@ -10,7 +6,15 @@ header, .project:not(:last-child) {
   --contrast: #ebebec;
 }
 
+#loginBtn {
+  display: block;
+  margin: 0 auto;
+}
 
+#createBtn {
+  display: block;
+  margin: 0 auto;
+}
 .no-button {
   background: none;
   border: none;
