@@ -1,3 +1,81 @@
+/* test */
+:root {
+  /* COLOR VARIABLE NAMES */
+  --primary-lighter: #58586b;
+  --primary: #40404a;
+  --primary-darker: #26262e;
+  --contrast: #ebebec;
+}
+
+/* ----------- HOMEPAGE ----------- */
+
+.postCardEntire {
+  border-radius: 20px;
+  background-color: var(--primary);
+  border-bottom: 6px solid black;
+}
+
+.postTitleSection {
+  font-size: 2em;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  margin: 0px;
+}
+
+.postTitle {
+  color: var(--contrast);
+}
+
+.titleBorder {
+  width: 100%;
+  padding: 5px 0px 0px 0px;
+  border-bottom: 2px solid var(--contrast);
+}
+
+.postAuthor {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.95em;
+  padding: 5px 0px 0px 0px;
+  color: var(--contrast);
+}
+
+.postDescription {
+  text-align: left;
+  font-size: 1.2em;
+  margin: 0px 30px 12px 30px;
+  color: var(--contrast);
+}
+
+.postVotes {
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+
+.postVoteValue {
+  display: inline-block;
+  color: var(--primary-darker);
+  background-color: var(--contrast);
+  width: 80px;
+  border-radius: 20px;
+  margin: 0px 10px 15px 10px;
+}
+
+.upvote {
+  display: inline-block;
+}
+
+.downvote {
+  display: inline-block;
+}
+
+.detector {
+  background-color: red;
+}
+
+/* ----------- HOMEPAGE ENDS ----------- */
+
+/* TEMPLATE CODE */
 header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
