@@ -13,5 +13,25 @@
     "name": "Amiko",
     "email": "amiko2k20@aol.com",
     "password": "password12345"
+  },
+  {
+    "name": "Steven",
+    "email": "steven@steven.steven",
+    "password": "aReallyToughPW1!"
+  },
+  {
+    "name": "Matthew",
+    "email": "matthew@matthew.matthew",
+    "password": "no0n3canBreakTHISPASSWORD"
+  },
+  {
+    "name": "Peter",
+    "email": "peter@peter.peter",
+    "password": "ohsoveryTOUGHpassword1m@3nIT"
+  },
+  {
+    "name": "Kenneth",
+    "email": "kenneth@kenneth.kenneth",
+    "password": "proGamerMove123"
   }
 ]
