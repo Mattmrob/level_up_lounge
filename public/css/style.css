@@ -10,7 +10,15 @@
 /* ------- MAIN.HANDLEBARS -------- */
 
 .mainBackground {
-background-color: var(--contrast);
+  background-color: var(--contrast);
+}
+
+.loginBlock {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  right: 3%;
+  bottom: 5%;
 }
 
 /* ----------- MAIN ENDS ---------- */
