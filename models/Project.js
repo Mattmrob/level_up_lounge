@@ -6,10 +6,12 @@ class Project extends Model {}
 Project.init(
   {
     id: {
-      type: DataTypes.INTEGER,
+      // UUID are unique designators, rater than relying on auto-incrementing
+      type: DataTypes.UUID,
+      default: DataTypes.UUIDV4,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      // autoIncrement: true,
     },
     name: {
       type: DataTypes.STRING,
