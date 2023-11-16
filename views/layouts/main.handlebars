@@ -9,48 +9,28 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<div class="logoBlock">
-  <a href="/"><img src="assets/lul_logo.png" alt="Level Up Lounge Logo" class="lulgo"></a>
-</div>
-
-<div class="loginBlock">
-    {{#if logged_in}}
-      <a href="/profile"><h1>Account</h1></a>
-      <button id="logout">logout</button>
-    {{else}}
-      <a href="/login"><h1 class="loginUserButton">Log In!</h1></a>
-      <p class="loginMessage">You need to be logged in to post</p>
-    {{/if}}
-    </div>
-
 <body class="mainBackground">
 
-  <div class="row-md-12 flex-column justify-space-apart">
-    <div class="col-md-12">
-  {{!-- THIS IS ALL THE NAV BAR --}}
-      {{!-- <header class="display-flex justify-space-between align-center p-2">
-        <h1>
-          <span role="img" aria-label="money">💸</span>
-          <a href="/">LevelUpLounge</a>
-        </h1>
-        <nav>
-          {{#if logged_in}}
-          <a href="/profile">profile</a> |
-          <button class="no-button" id="logout">logout</button>
-          {{else}}
-          <a href="/login">login</a>
-          {{/if}}
-        </nav>
-      </header> --}}
-      {{!-- NAV BAR END --}}
-
-      {{!-- THIS IS WHERE OUR CARDS ARE RENDERED --}}
-      <main class="container container-fluid mt-5">
-        {{{ body }}}
-      </main>
-      {{!-- RENDER END --}}
-    </div>
+  {{!-- LOGO --}}
+  <div class="logoBlock">
+    <a href="/"><img src="assets/lul_logo.png" alt="Level Up Lounge Logo" class="lulgo"></a>
   </div>
+
+  {{!-- LOGIN --}}
+  <div class="loginBlock">
+    {{#if logged_in}}
+      <a href="/profile"><h1 class="accountButton">Account</h1></a>
+      <button id="logout" class="logoutButton">logout</button>
+    {{else}}
+      <a href="/login"><h1 class="loginHomeButton">Log In!</h1></a>
+    {{/if}}
+  </div>
+
+  {{!-- RENDER START --}}
+  <main class="container container-fluid mt-5">
+    {{{body}}}
+  </main>
+  {{!-- RENDER END --}}
 
   <!-- Render script for logged in users only -->
   {{#if logged_in}}

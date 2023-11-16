@@ -7,6 +7,11 @@
   --contrast: #ebebec;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+
 /* ------- MAIN.HANDLEBARS -------- */
 
 .mainBackground {
@@ -19,12 +24,12 @@
   z-index: 1;
   left: 2%;
   top: 5%;
-  padding: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  width: 188px;
 }
 
 .lulgo {
-  width: 200px;
+  width: 165px;
 }
 
 .loginBlock {
@@ -34,18 +39,51 @@
   right: 2%;
   bottom: 5%;
   padding: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  width: 188px;
 }
 
-.loginUserButton {
-border: 1px solid black;
-border-radius: 1000px;
-padding: 0px 0px 5px 0px;
-background-color: var(--contrast);
+.loginHomeButton {
+  color: var(--primary-darker);
+  background-color: var(--contrast);
+  border: 1px solid black;
+  border-radius: 1000px;
+  padding: 0px 0px 5px 0px;
+}
+
+.loginHomeButton:hover {
+  color: var(--primary-lighter);
+  text-decoration: none;
+}
+
+.accountButton {
+  color: var(--primary-darker);
+  font-size: 2em;
+  border: 1px solid black;
+  border-radius: 1000px;
+  padding: 0px 0px 5px 0px;
+  background-color: var(--contrast);
+  }
+
+  .accountButton:hover {
+    color: var(--primary-lighter);
+    text-decoration: none;
+  }
+
+.logoutButton {
+  background-color: var(--contrast);
+  border: 1px solid black;
+  border-radius: 1000px;
+  padding: 5px 10px 5px 10px;
+}
+
+.logoutButton:hover {
+  color: var(--primary-lighter);
+  text-decoration: none;
 }
 
 .loginMessage {
-  font-size: .8em;
+  font-size: .9em;
   font-style: italic;
   border: 1px solid black;
   border-radius: 1000px;
@@ -53,6 +91,7 @@ background-color: var(--contrast);
 }
 
 /* ----------- MAIN ENDS ---------- */
+
 
 /* ----------- HOMEPAGE ----------- */
 
@@ -121,6 +160,24 @@ background-color: var(--contrast);
 }
 
 /* ----------- HOMEPAGE ENDS ----------- */
+
+
+/* ------- BODY DETECTORS ------- */
+
+.dred {
+  background-color: red;
+}
+
+.dblue {
+  background-color: blue;
+}
+
+.dyell {
+  background-color: yellow;
+}
+
+/* ----- END DETECTORS ----- */
+
 
 /* TEMPLATE CODE */
 header, .project:not(:last-child) {
