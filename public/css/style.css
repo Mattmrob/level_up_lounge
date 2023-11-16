@@ -13,16 +13,24 @@
   background-color: var(--contrast);
 }
 
+.logoBlock {
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  left: 3%;
+  top: 5%;
+  padding: 10px;
+  border: 1px solid black;
+}
+
 .loginBlock {
-  position: absolute;
+  position: fixed;
   text-align: center;
   z-index: 1;
   right: 3%;
   bottom: 5%;
   padding: 10px;
   border: 1px solid black;
-  display: flex;
-  flex-direction: column;
 }
 
 .loginUserButton {
