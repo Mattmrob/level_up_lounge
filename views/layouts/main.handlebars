@@ -12,9 +12,14 @@
 <body class="mainBackground">
 
   <div class="loginBlock">
-      <a href="/profile"><h1>User</h1></a>
-      <button>Login</button>
-      <button>Logout</button>
+    {{#if logged_in}}
+      <a href="/profile"><h1>{{name}}</h1></a>
+      <button id="logout">logout</button>
+      <a href="/">Return Home</a>
+    {{else}}
+      <a href="/login"><h1 class="loginUserButton">Log In!</h1></a>
+      <p class="loginMessage">You need to be logged in to post</p>
+    {{/if}}
     </div>
 
   <div class="row-md-12 flex-column justify-space-apart">

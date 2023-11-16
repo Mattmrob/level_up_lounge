@@ -19,6 +19,25 @@
   z-index: 1;
   right: 3%;
   bottom: 5%;
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginUserButton {
+border: 1px solid black;
+border-radius: 1000px;
+padding: 0px 0px 5px 0px;
+background-color: var(--contrast);
+}
+
+.loginMessage {
+  font-size: .8em;
+  font-style: italic;
+  border: 1px solid black;
+  border-radius: 1000px;
+  padding: 0px 10px 0px 10px;
 }
 
 /* ----------- MAIN ENDS ---------- */
