@@ -2,6 +2,15 @@ header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 
+:root {
+  /* COLOR VARIABLE NAMES */
+  --primary-lighter: #58586b;
+  --primary: #40404a;
+  --primary-darker: #26262e;
+  --contrast: #ebebec;
+}
+
+
 .no-button {
   background: none;
   border: none;
