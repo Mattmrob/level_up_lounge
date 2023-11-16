@@ -7,6 +7,14 @@
   --contrast: #ebebec;
 }
 
+/* ------- MAIN.HANDLEBARS -------- */
+
+.mainBackground {
+background-color: var(--contrast);
+}
+
+/* ----------- MAIN ENDS ---------- */
+
 /* ----------- HOMEPAGE ----------- */
 
 .postCardEntire {

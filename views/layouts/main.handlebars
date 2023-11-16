@@ -9,33 +9,38 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
-{{!-- THIS IS ALL THE NAV BAR --}}
-  <div class="col-md-12">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">LevelUpLounge</a>
-      </h1>
-      <nav>
-        {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-    </header>
-    {{!-- NAV BAR END --}}
+<body class="mainBackground">
+  <div class="row-md-12 flex-column justify-space-apart">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+  {{!-- THIS IS ALL THE NAV BAR --}}
+      {{!-- <header class="display-flex justify-space-between align-center p-2">
+        <h1>
+          <span role="img" aria-label="money">💸</span>
+          <a href="/">LevelUpLounge</a>
+        </h1>
+        <nav>
+          {{#if logged_in}}
+          <a href="/profile">profile</a> |
+          <button class="no-button" id="logout">logout</button>
+          {{else}}
+          <a href="/login">login</a>
+          {{/if}}
+        </nav>
+      </header> --}}
+      {{!-- NAV BAR END --}}
 
-    {{!-- THIS IS WHERE OUR CARDS ARE RENDERED --}}
-    <main class="container container-fluid mt-5">
-      {{{ body }}}
-    </main>
-    {{!-- RENDER END --}}
+      {{!-- THIS IS WHERE OUR CARDS ARE RENDERED --}}
+      <main class="container container-fluid mt-5">
+        {{{ body }}}
+      </main>
+      {{!-- RENDER END --}}
+    </div>
 
-    <footer>
-    </footer>
+    <div class="row-md-12 display-flex align-right">
+      <h1>Testing</h1>
+
+    </div>
   </div>
 
   <!-- Render script for logged in users only -->
