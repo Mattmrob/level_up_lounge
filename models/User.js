@@ -12,8 +12,8 @@ User.init(
   {
     id: {
       type: DataTypes.UUID,
-      default: DataTypes.UUIDV4,
-      allowNull: false,
+      defaultValue: DataTypes.UUIDV4,
+      allowNull: true,
       primaryKey: true,
       // autoIncrement: true,
     },

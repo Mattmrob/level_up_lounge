@@ -8,7 +8,7 @@ Project.init(
     id: {
       // UUID are unique designators, rater than relying on auto-incrementing
       type: DataTypes.UUID,
-      default: DataTypes.UUIDV4,
+      defaultValue: DataTypes.UUIDV4,
       allowNull: false,
       primaryKey: true,
       // autoIncrement: true,
