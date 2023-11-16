@@ -17,21 +17,21 @@
   position: fixed;
   text-align: center;
   z-index: 1;
-  left: 3%;
+  left: 2%;
   top: 5%;
   padding: 10px;
   border: 1px solid black;
 }
 
 .lulgo {
-  display: block;
+  width: 200px;
 }
 
 .loginBlock {
   position: fixed;
   text-align: center;
   z-index: 1;
-  right: 3%;
+  right: 2%;
   bottom: 5%;
   padding: 10px;
   border: 1px solid black;

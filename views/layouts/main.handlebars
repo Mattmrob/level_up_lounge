@@ -10,13 +10,12 @@
 </head>
 
 <div class="logoBlock">
-  <img src="../../assets/lul_logo.png" alt="Level Up Lounge Logo">
+  <a href="/"><img src="assets/lul_logo.png" alt="Level Up Lounge Logo" class="lulgo"></a>
 </div>
 
 <div class="loginBlock">
     {{#if logged_in}}
       <a href="/profile"><h1>Account</h1></a>
-      <a href="/">LevelUpLounge</a>
       <button id="logout">logout</button>
     {{else}}
       <a href="/login"><h1 class="loginUserButton">Log In!</h1></a>
