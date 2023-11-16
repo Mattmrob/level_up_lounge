@@ -13,5 +13,15 @@
     "name": "Roll 'Em Up",
     "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
     "needed_funding": 800
+  },
+  {
+    "name": "Mario Kart",
+    "description": "what if like we made a game where all the mario characters sort of race & battle it out. also bowser is there and like there are different cups for differnt map combos",
+    "needed_funding": 1000000000
+  },
+  {
+    "name": "Atlas' Atlas",
+    "description": "A game where you place tiles together, then try to build a village to survive an ever-toughening world.",
+    "needed_funding": 50000
   }
 ]
