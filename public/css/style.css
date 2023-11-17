@@ -96,6 +96,14 @@ a:hover {
   padding: 0px 10px 0px 10px;
 }
 
+.hiddenLogo {
+  display: none;
+}
+
+.loungeButton {
+  display: none;
+}
+
 /* ------- BREAKPOINT 1 */
 @media (max-width: 1624px) {
 
@@ -103,17 +111,9 @@ a:hover {
     padding-bottom: 60px;
   }
 
-  .logoBlock {
-    position: fixed;
-    text-align: center;
-    z-index: 1;
-    left: 2%;
-    top: 5%;
-    width: 188px;
-  }
   
   .lulgo {
-    width: 165px;
+    display: none;
   }
   
   .loginBlock {
@@ -157,13 +157,59 @@ a:hover {
   .logoutButton {
     width: 70px;
     height: 30px;
-    margin: 12px 0px 0px 15px;
+    margin: 12px 15px 0px 15px;
   }
   
   .logoutButton:hover {
     border-bottom: 0px;
     margin-top: 13px;
   }
+
+  .hiddenLogoContainer {
+    background-color: var(--primary-darker);
+    height: 50px;
+    width: 120px;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 15px 0px 0px;
+    border-radius: 20px;
+    border-bottom: solid black 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loungeButton {
+    display: inline;
+    background-color: var(--primary-darker);
+    color: var(--contrast);
+    border-radius: 1000px;
+    border:0px;
+    border-bottom: solid black 3px;
+    padding: 5px 10px 5px 10px;
+    width: 70px;
+    height: 30px;
+    margin: 12px 15px 0px 15px;
+  }
+  
+  .loungeButton:hover {
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 3px;
+    border-bottom: 0px;
+    margin-top: 13px;
+  }
+
+  /* .hiddenLogoContainer:hover {
+    border-bottom: 0px;
+    margin-top: 3px;
+    padding-top: 5px;
+  }
+
+  .hiddenLogo {
+    display: inline;
+    height: 35px;
+  } */
 
   
 }
