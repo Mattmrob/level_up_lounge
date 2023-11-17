@@ -5,7 +5,29 @@
   --primary-darker: #26262e;
   --contrast: #ebebec;
 }
+body {
+  color: #ebebec; 
+}
+#email-login,
+#password-login,
+#loginBtn,
+#name-signup,
+#email-signup,
+#password-signup,
+#createBtn {
+  background-color: #58586b
+}
 
+.form-input::placeholder {
+  color: #ebebec;
+}
+.forms-container {
+  background-color: #26262e;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px; 
+  text-align: center;
+}
 #loginBtn {
   display: block;
   margin: 0 auto;
@@ -15,6 +37,18 @@
   display: block;
   margin: 0 auto;
 }
+
+h2 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 15px;
+  text-align: center; 
+}
+
 .no-button {
   background: none;
   border: none;
