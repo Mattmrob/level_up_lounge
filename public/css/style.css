@@ -26,9 +26,21 @@ a:hover {
   top: 5%;
   /* border: 1px solid black; */
   width: 188px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border-bottom: 3px solid rgba(255,255,255, .4);
+}
+
+.logoBlock:hover {
+  /* border: 2px solid var(--primary-darker); */
+  border-bottom: 0px;
+  margin-top: 3px;
 }
 
 .lulgo {
+  padding-top: 2px;
   width: 165px;
 }
 
@@ -48,6 +60,7 @@ a:hover {
   background-color: var(--primary-darker);
   border-radius: 1000px;
   border-bottom: solid black 5px;
+  border-top: 1.5px solid var(--primary-lighter);
   padding: 0px 0px 5px 0px;
   width: 200px;
 }
@@ -63,6 +76,7 @@ a:hover {
   font-size: 2em;
   border-radius: 1000px;
   border-bottom: 5px solid black;
+  border-top: 1.5px solid var(--primary-lighter);
   padding: 0px 0px 5px 0px;
   background-color: var(--primary-darker);
   }
@@ -78,6 +92,7 @@ a:hover {
   border-radius: 1000px;
   border:0px;
   border-bottom: solid black 3px;
+  border-top: 1.5px solid var(--primary-lighter);
   padding: 5px 10px 5px 10px;
 }
 
@@ -105,13 +120,16 @@ a:hover {
 }
 
 /* ------- BREAKPOINT 1 */
-@media (max-width: 1624px) {
+@media (max-width: 1636px) {
 
   .mainBackground {
     padding-bottom: 60px;
   }
 
-  
+  .logoBlock {
+    display: none;
+  }
+
   .lulgo {
     display: none;
   }
@@ -156,13 +174,14 @@ a:hover {
   
   .logoutButton {
     width: 70px;
-    height: 30px;
+    height: 32px;
     margin: 12px 15px 0px 15px;
+    border-bottom: solid black 4px;
   }
   
   .logoutButton:hover {
     border-bottom: 0px;
-    margin-top: 13px;
+    margin-top: 14px;
   }
 
   .hiddenLogoContainer {
@@ -185,10 +204,11 @@ a:hover {
     color: var(--contrast);
     border-radius: 1000px;
     border:0px;
-    border-bottom: solid black 3px;
-    padding: 5px 10px 5px 10px;
+    border-bottom: solid black 4px;
+    border-top: 1.5px solid var(--primary-lighter);
+    padding: 5px 10px 0px 10px;
     width: 70px;
-    height: 30px;
+    height: 32px;
     margin: 12px 15px 0px 15px;
   }
   
@@ -197,7 +217,8 @@ a:hover {
     cursor: pointer;
     margin-top: 3px;
     border-bottom: 0px;
-    margin-top: 13px;
+    margin-top: 14px;
+    color: var(--contrast);
   }
 
   /* .hiddenLogoContainer:hover {
