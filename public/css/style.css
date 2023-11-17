@@ -14,7 +14,8 @@
 #name-signup,
 #email-signup,
 #password-signup,
-#createBtn {
+#createBtn
+{
   background-color: #58586b;
   color: #ebebec
 }
