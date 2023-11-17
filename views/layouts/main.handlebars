@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
   <title>LevelUpLounge</title>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
@@ -36,6 +37,8 @@ This is currently bugged and does not work on the Projects page --}}
   {{!-- LOGIN --}}
   <div class="loginBlock">
     {{#if logged_in}}
+      {{!-- <a href="/" class="hiddenLogoContainer"><img src="assets/lul_logo.png" alt="Level Up Lounge Logo" class="hiddenLogo"></a> --}}
+      <a href="/" class="loungeButton">lounge</a>
       <a href="/profile"><h2 class="accountButton">Account</h2></a>
       <button id="logout" class="logoutButton">logout</button>
     {{else}}
