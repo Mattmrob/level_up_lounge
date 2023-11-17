@@ -15,7 +15,8 @@
 #email-signup,
 #password-signup,
 #createBtn {
-  background-color: #58586b
+  background-color: #58586b;
+  color: #ebebec
 }
 
 .form-input::placeholder {
