@@ -19,6 +19,13 @@
   background-color: #58586b;
   color: #ebebec
 }
+#email-login,
+#password-login,
+#name-signup,
+#email-signup,
+#password-signup {
+  border-radius: 20px;
+}
 .btn {
   border-radius: 20px; 
   font-size: 25px; 
@@ -28,7 +35,7 @@ hr {
   border-top: 1px dashed #ebebec;
   margin-top: 15px;  
   height: 0;  
-  border-width: 5px 25px; /* Adjust the values for even-sized dashes and spacing */
+  border-width: 5px 25px; 
 }
 
 .form-input::placeholder {
@@ -56,11 +63,32 @@ hr {
 h2,
 h4 {
   text-align: center;
-
 }
+
 .form-group {
   margin-bottom: 15px;
   text-align: center; 
+}
+#project-name,
+#project-funding, 
+#project-desc {
+   background-color: #58586b;
+   color: #ebebec
+}
+.border-right {
+  border-right: 1px solid white;
+  height: 100%;
+}
+.form-input::placeholder {
+  color: #ebebec;
+}
+.new-game-container,
+.project-list-container {
+  background-color: #26262e;
+  padding: 20px;  
+  border-radius: 30px;  
+  color: white;  
+ margin-top: 20px;
 }
 
 .no-button {
