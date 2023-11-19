@@ -2,8 +2,9 @@
 "use strict";
 
 const logger = require('./logger.js');
+const format = require('./format.js');
 
 module.exports = 
 {
-    logger
+    logger, format
 };

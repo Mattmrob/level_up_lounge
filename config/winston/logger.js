@@ -1,6 +1,7 @@
 "use strict";
 
 const {format, createLogger, transports } = require('winston');
+require('winston-daily-rotate-file');
 
 const winOptions = 
     {
@@ -9,9 +10,9 @@ const winOptions =
         defaultMeta: { service: 'user-service' },
         transports: [
             new transports.File( 
-                { filename: 'error.log', level: 0}),
+                { filename: 'logs/error.log', level: 0}),
             new transports.File( 
-                { filename: 'combined.log' }),
+                { filename: 'logs/combined.log' }),
             ]
     }
 
