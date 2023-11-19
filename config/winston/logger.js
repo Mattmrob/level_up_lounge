@@ -41,4 +41,4 @@ const logger = createLogger(winOptions);
 
 // ------ end debugging ------------------------------------------- // 
 
-module.exports = logger;
+module.exports = logger, fileRotateTransport;
