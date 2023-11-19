@@ -21,11 +21,11 @@ const fileRotateTransport = new transports.DailyRotateFile(
 const winOptions = 
     {
         level: 'info',
-        format: format.json(),
+        format: customFormat,
         defaultMeta: { service: 'user-service' },
         transports: [
             new transports.File( 
-                { filename: 'logs/error.log', level: 0}),
+                { filename: 'logs/error.log', level: 'error'}),
             new transports.File( 
                 { filename: 'logs/combined.log' }),
             new transports.Console(
@@ -34,7 +34,7 @@ const winOptions =
             ]
     }
 
-const logger = createLogger(winOptions);
+// const logger = createLogger(winOptions);
 
 
 // // ------ debugging section to print verbose logs in console ------ //
@@ -47,4 +47,4 @@ const logger = createLogger(winOptions);
 
 // // ------ end debugging ------------------------------------------- // 
 
-module.exports = logger, fileRotateTransport;
+module.exports = createLogger(winOptions), fileRotateTransport;
