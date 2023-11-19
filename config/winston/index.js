@@ -18,13 +18,15 @@ const winOptions =
 
 const logger = winston.createLogger(winOptions);
 
-// ------ debugging section to print verbose logs in console ------- //
+// ------ debugging section to print verbose logs in console ------ //
 
 logger.add(new winston.transports.Console(
     {
         format: winston.format.simple()
     }
 ));
+
+// ------ end debugging                                      ------ // 
 
 module.exports( 
     { 
