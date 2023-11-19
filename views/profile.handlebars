@@ -3,23 +3,24 @@
     <h2>Welcome, {{name}}!</h2>
   </div>
 </div>
+<div class="container-fluid">
 
-<div class="row mt-4">
-  <div class="col-md-6">
-    <h3>Create a New Project:</h3>
+<div class="row mt-4 mx-auto text-center">
+  <div class="col-md-12 new-game-container">
+    <h3>Create a New Game:</h3>
 
     <form class="form new-project-form">
       <div class="form-group">
-        <label for="project-name">project name:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <label for="project-name">Game Name:</label>
+        <input class="form-input" style="max-width: 650px; width: 100%; margin: 0 auto;" type="text" id="project-name" name="project-name" placeholder="Enter name"/>
       </div>
       <div class="form-group">
-        <label for="project-funding">needed funding ($):</label>
-        <input class="form-input" type="number" id="project-funding" name="project-funding" />
+        <label for="project-funding">Devolopment Costs ($):</label>
+        <input class="form-input" style="max-width: 750px; width: 100%; margin: 0 auto;" type="number" id="project-funding" name="project-funding" placeholder="Enter price" />
       </div>
       <div class="form-group">
-        <label for="project-desc">description:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <label for="project-desc">Description:</label>
+        <textarea class="form-input" style="max-width: 850px; width: 100%; margin: 0 auto;" id="project-desc" name="project-desc" placeholder="Enter description"></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
@@ -28,7 +29,7 @@
   </div>
 
   {{#if projects.length}}
-  <div class="col-md-6 project-list">
+  <div class="col-md-12 project-list project-list-container">
     <h3>Current Projects:</h3>
 
     {{#each projects as |project|}}
@@ -44,5 +45,4 @@
   </div>
   {{/if}}
 </div>
-
 <script src="./js/profile.js"></script>
