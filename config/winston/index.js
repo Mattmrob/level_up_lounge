@@ -3,9 +3,8 @@
 
 const logger = require('./logger.js');
 const format = require('./format.js');
-const frt = require('./daily_rotate.js');
 
 module.exports = 
 {
-    logger, format, frt
+    logger, format
 };
