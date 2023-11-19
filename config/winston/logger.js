@@ -35,11 +35,11 @@ const logger = createLogger(winOptions);
 
 // ------ debugging section to print verbose logs in console ------ //
 
-// logger.add(new transports.Console(
-//     {
-//         format: format.simple()
-//     }
-// ));
+logger.add(new transports.Console(
+    {
+        format: format.simple()
+    }
+));
 
 // ------ end debugging ------------------------------------------- // 
 
