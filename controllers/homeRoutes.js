@@ -10,7 +10,12 @@ router.get('/', async (req, res) => {
         {
           model: User,
           attributes: ['name'],
-        },
+        }, 
+      ],
+      order: [
+        [
+          'date_created','DESC'
+        ]
       ],
     });
     
