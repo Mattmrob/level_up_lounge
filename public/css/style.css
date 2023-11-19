@@ -406,7 +406,16 @@ h4 {
   margin-top: 20px; 
 }
   
-  /* -------- LOGIN PAGE END ---------- */
+/* -------- LOGIN PAGE END ---------- */
+
+
+/* ------ PROJECT BY ID PAGE BEGINS ------ */
+
+.zup {
+  z-index: 1;
+}
+
+/* ------- PROJECT BY ID PAGE ENDS ------ */
 
 
 /* ------- BODY DETECTORS ------- */
