@@ -1,9 +1,11 @@
 <div class="text-center postCardEntire">
   <h2 class="postTitleSection">
-  <a class="postTitle noHoverGlow">{{name}}</a>
+    <a class="postTitle noHoverGlow">{{name}}</a>
   </h2>
   <p class="postAuthor">Created by {{user.name}} on {{format_date date_created}}</p>
-  <p class="postDescription">
-    {{description}}
+  <div class="col-md-12 descriptionContainer">
+    <p class="postDescription">
+      {{description}}
     </p>
+  </div>
 </div>
