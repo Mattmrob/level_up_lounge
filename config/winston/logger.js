@@ -8,7 +8,7 @@ require('winston-daily-rotate-file');
 
 const fileRotateTransport = new transports.DailyRotateFile(
     {
-        filename: `logs/rotate-${DATE}.log`,
+        filename: 'logs/rotate-%DATE%.log',
         datePattern: 'YYYY-MM-DD',
         // set this to number of days to retain: currently 1 week
         maxFiles: '7d',
