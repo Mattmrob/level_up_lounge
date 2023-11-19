@@ -411,8 +411,8 @@ h4 {
 
 /* ------ PROJECT BY ID PAGE BEGINS ------ */
 
-.zup {
-  z-index: 1;
+.noHoverGlow:hover {
+  color: var(--contrast);
 }
 
 /* ------- PROJECT BY ID PAGE ENDS ------ */
