@@ -3,6 +3,18 @@
 const {format, createLogger, transports } = require('winston');
 require('winston-daily-rotate-file');
 
+
+// ------ file rotation ------------------------------------------- //
+
+const fileRotateTransport = new transports.DailyRotateFile(
+    {
+        filename: `logs/rotate-${DATE}.log`,
+        datePattern: 'YYYY-MM-DD',
+        maxFiles: '10d',
+    }
+);
+
+// ------ end file rotation --------------------------------------- //
 const winOptions = 
     {
         level: 'info',
@@ -18,6 +30,7 @@ const winOptions =
 
 const logger = createLogger(winOptions);
 
+
 // ------ debugging section to print verbose logs in console ------ //
 
 // logger.add(new transports.Console(
@@ -26,6 +39,6 @@ const logger = createLogger(winOptions);
 //     }
 // ));
 
-// ------ end debugging                                      ------ // 
+// ------ end debugging ------------------------------------------- // 
 
 module.exports = logger;
