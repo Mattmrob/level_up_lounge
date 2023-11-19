@@ -28,7 +28,7 @@ logger.add(new winston.transports.Console(
 
 // ------ end debugging                                      ------ // 
 
-module.exports( 
+module.exports = 
     { 
         winston
-    });
+    };
