@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
 ## Description
-A social media site for people, who love gaming, and wish to share their unique perspectives about future developments in games that they play.
+Level Up Lounge is a social media site for people, who love gaming, and wish to share their unique perspectives about future developments in games that they play.
 
 ## Table of Contents
 
@@ -17,10 +17,16 @@ A social media site for people, who love gaming, and wish to share their unique 
 
   
 ## Installation
-The site requires a browser with internet connection to access. The site is built using a modularized Node.js application with MySQL database, Express.js routing, and Handlebars. The database is using Sequelize as an ORM, Winston for logging, and bcyrpt for user data encryption with environmental variables.
+The site requires a browser with internet connection to access. The site is built using a modularized Node.js application with MySQL database, Express.js routing, and Handlebars. The database uses Sequelize as an ORM, Winston for logging, and bcyrpt for user data encryption with environmental variables.
 
 ## Usage
-The site requires a user be logged in to interact with posts. Posts can be upvoted or downvoted and are displayed in the user's feed in descending order of the number of upvotes. Once logged in, the user has the option to create posts, interact with them, and respond to them. 
+The site requires a user be logged in to interact with posts. Posts can be upvoted or downvoted and are displayed in the user's feed in descending order with regard to the number of upvotes. Once logged in the user has the option to create posts, interact with them, and respond to them.
+
+![Homepage Screenshot](homepage_image_placeholder)
+
+![Login page Screenshot](homepage_image_placeholder)
+
+![Detailed Post Screenshot](homepage_image_placeholder)
 
 ## License
 Copyright (c) <2023> <copyright Peter Martinez, Steven Reed, Matthew Roberts, Kenneth Wong>
