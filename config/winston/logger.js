@@ -10,7 +10,9 @@ const fileRotateTransport = new transports.DailyRotateFile(
     {
         filename: `logs/rotate-${DATE}.log`,
         datePattern: 'YYYY-MM-DD',
-        maxFiles: '10d',
+        // set this to number of days to retain: currently 1 week
+        maxFiles: '7d',
+        // IF CHANGED => CHANGE COMMENT
     }
 );
 
