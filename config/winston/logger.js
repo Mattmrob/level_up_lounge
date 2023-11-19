@@ -1,6 +1,7 @@
 "use strict";
 
 const {format, createLogger, transports } = require('winston');
+const { customFormat } = require('./format');
 require('winston-daily-rotate-file');
 
 
@@ -27,20 +28,23 @@ const winOptions =
                 { filename: 'logs/error.log', level: 0}),
             new transports.File( 
                 { filename: 'logs/combined.log' }),
+            new transports.Console(
+                { format: customFormat }
+            )
             ]
     }
 
 const logger = createLogger(winOptions);
 
 
-// ------ debugging section to print verbose logs in console ------ //
+// // ------ debugging section to print verbose logs in console ------ //
 
-logger.add(new transports.Console(
-    {
-        format: format.simple()
-    }
-));
+// logger.add(new transports.Console(
+//     {
+//         format: format.simple()
+//     }
+// ));
 
-// ------ end debugging ------------------------------------------- // 
+// // ------ end debugging ------------------------------------------- // 
 
 module.exports = logger, fileRotateTransport;
