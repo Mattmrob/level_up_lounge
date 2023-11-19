@@ -1,31 +1,30 @@
 "use strict";
 
-const winston = require('winston');
+const {format, createLogger, transports } = require('winston');
 
 const winOptions = 
     {
         level: 'info',
-        format: winston.format.json(),
+        format: format.json(),
         defaultMeta: { service: 'user-service' },
         transports: [
-            new winston.transports.File( 
+            new transports.File( 
                 { filename: 'error.log', level: 0}),
-            new winston.transports.File( 
+            new transports.File( 
                 { filename: 'combined.log' }),
             ]
     }
 
-const logger = winston.createLogger(winOptions);
+const logger = createLogger(winOptions);
 
 // ------ debugging section to print verbose logs in console ------ //
 
-logger.add(new winston.transports.Console(
-    {
-        format: winston.format.simple()
-    }
-));
+// logger.add(new transports.Console(
+//     {
+//         format: format.simple()
+//     }
+// ));
 
 // ------ end debugging                                      ------ // 
 
 module.exports = logger;
-    
