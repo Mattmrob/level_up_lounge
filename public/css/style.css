@@ -5,6 +5,321 @@
   --primary-darker: #26262e;
   --contrast: #ebebec;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/* ------- MAIN.HANDLEBARS -------- */
+
+.mainBackground {
+  background-color: var(--contrast);
+}
+
+.logoBlock {
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  left: 2%;
+  top: 5%;
+  /* border: 1px solid black; */
+  width: 188px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border-bottom: 3px solid rgba(255,255,255, .4);
+}
+
+.logoBlock:hover {
+  /* border: 2px solid var(--primary-darker); */
+  border-bottom: 0px;
+  margin-top: 3px;
+}
+
+.lulgo {
+  padding-top: 2px;
+  width: 165px;
+}
+
+.loginBlock {
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  right: 2%;
+  bottom: 5%;
+  padding: 10px;
+  /* border: 1px solid black; */
+  width: 188px;
+}
+
+.loginHomeButton {
+  color: var(--contrast);
+  background-color: var(--primary-darker);
+  border-radius: 1000px;
+  border-bottom: solid black 5px;
+  border-top: 1.5px solid var(--primary-lighter);
+  padding: 0px 0px 5px 0px;
+  width: 200px;
+}
+
+.loginHomeButton:hover {
+  color: var(--primary-lighter);
+  border-bottom: 0px;
+  text-decoration: none;
+}
+
+.accountButton {
+  color: var(--contrast);
+  font-size: 2em;
+  border-radius: 1000px;
+  border-bottom: 5px solid black;
+  border-top: 1.5px solid var(--primary-lighter);
+  padding: 0px 0px 5px 0px;
+  background-color: var(--primary-darker);
+  }
+
+.accountButton:hover {
+  text-decoration: none;
+  border-bottom: 0px;
+}
+
+.logoutButton {
+  background-color: var(--primary-darker);
+  color: var(--contrast);
+  border-radius: 1000px;
+  border:0px;
+  border-bottom: solid black 3px;
+  border-top: 1.5px solid var(--primary-lighter);
+  padding: 5px 10px 5px 10px;
+}
+
+.logoutButton:hover {
+  text-decoration: none;
+  border-bottom: 0px;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.loginMessage {
+  font-size: .9em;
+  font-style: italic;
+  border: 1px solid black;
+  border-radius: 1000px;
+  padding: 0px 10px 0px 10px;
+}
+
+.hiddenLogo {
+  display: none;
+}
+
+.loungeButton {
+  display: none;
+}
+
+/* ------- BREAKPOINT 1 */
+@media (max-width: 1636px) {
+
+  .mainBackground {
+    padding-bottom: 60px;
+  }
+
+  .logoBlock {
+    display: none;
+  }
+
+  .lulgo {
+    display: none;
+  }
+  
+  .loginBlock {
+    position: fixed;
+    text-align: center;
+    right: 0%;
+    bottom: 0%;
+    padding: 10px 0px 0px 0px;
+    width: 100%;
+    height: 78px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .loginHomeButton {
+    color: var(--contrast);
+    background-color: var(--primary-darker);
+    border-radius: 1000px;
+    padding: 0px 0px 5px 0px;
+    width: 200px;
+  }
+  
+  .loginHomeButton:hover {
+    color: var(--primary-lighter);
+    border-bottom: 0px;
+    margin-top: 5px;
+    text-decoration: none;
+  }
+  
+  .accountButton {
+    width: 200px;
+    background-color: var(--primary-darker);
+    }
+  
+  .accountButton:hover {
+    text-decoration: none;
+    margin-top: 5px;
+  }
+  
+  .logoutButton {
+    width: 70px;
+    height: 32px;
+    margin: 12px 15px 0px 15px;
+    border-bottom: solid black 4px;
+  }
+  
+  .logoutButton:hover {
+    border-bottom: 0px;
+    margin-top: 14px;
+  }
+
+  .hiddenLogoContainer {
+    background-color: var(--primary-darker);
+    height: 50px;
+    width: 120px;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 15px 0px 0px;
+    border-radius: 20px;
+    border-bottom: solid black 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loungeButton {
+    display: inline;
+    background-color: var(--primary-darker);
+    color: var(--contrast);
+    border-radius: 1000px;
+    border:0px;
+    border-bottom: solid black 4px;
+    border-top: 1.5px solid var(--primary-lighter);
+    padding: 5px 10px 0px 10px;
+    width: 70px;
+    height: 32px;
+    margin: 12px 15px 0px 15px;
+  }
+  
+  .loungeButton:hover {
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 3px;
+    border-bottom: 0px;
+    margin-top: 14px;
+    color: var(--contrast);
+  }
+
+  /* .hiddenLogoContainer:hover {
+    border-bottom: 0px;
+    margin-top: 3px;
+    padding-top: 5px;
+  }
+
+  .hiddenLogo {
+    display: inline;
+    height: 35px;
+  } */
+
+  
+}
+
+/* ----------- MAIN ENDS ---------- */
+
+
+/* ----------- HOMEPAGE ----------- */
+
+.postCardEntire {
+  border-radius: 20px;
+  background-color: var(--primary);
+  border-bottom: 6px solid black;
+  padding: 0px 0px 0px 0px;
+}
+
+.postCardEntire:hover {
+  border-bottom: 6px solid var(--primary);
+  position: relative;
+  top: 6px;
+}
+
+.postTitleSection {
+  font-size: 2em;
+  text-align: center;
+  padding: 10px 0px 5px 0px;
+  background-color: var(--primary-darker);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.postTitle {
+  color: var(--contrast);
+}
+
+.postTitle:hover {
+  color: white;
+}
+
+/* .titleBorder {
+  width: 100%;
+  padding: 5px 0px 0px 0px;
+  border-bottom: 2px solid var(--contrast);
+} */
+
+.postAuthor {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.95em;
+  padding: 0px;
+  color: var(--contrast);
+}
+
+.postDescription {
+  text-align: left;
+  font-size: 1.2em;
+  margin: 0px 30px 14px 30px;
+  color: var(--contrast);
+}
+
+.postVotes {
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+
+.postVoteValue {
+  display: inline-block;
+  color: var(--primary-darker);
+  background-color: var(--contrast);
+  width: 80px;
+  border-radius: 20px;
+  margin: 0px 10px 15px 10px;
+}
+
+.upvote {
+  display: inline-block;
+}
+
+.downvote {
+  display: inline-block;
+}
+
+.detector {
+  background-color: red;
+}
+
+/* ----------- HOMEPAGE ENDS ----------- */
+
+/* -------- LOGIN PAGE START ---------- */
+
 .custom-text {
   color: #ebebec
 }
@@ -89,6 +404,30 @@ h4 {
   border-radius: 30px;  
   color: white;  
  margin-top: 20px;
+  
+  /* -------- LOGIN PAGE END ---------- */
+
+
+/* ------- BODY DETECTORS ------- */
+
+.dred {
+  background-color: red;
+}
+
+.dblue {
+  background-color: blue;
+}
+
+.dyell {
+  background-color: yellow;
+}
+
+/* ----- END DETECTORS ----- */
+
+
+/* TEMPLATE CODE */
+header, .project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
 }
 
 .no-button {
