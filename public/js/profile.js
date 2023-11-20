@@ -4,6 +4,12 @@ const newFormHandler = async (event) => {
   const name = document.querySelector('#project-name').value.trim();
   const needed_funding = document.querySelector('#project-funding').value.trim();
   const description = document.querySelector('#project-desc').value.trim();
+  const maxCharLimit = 1000;
+
+  if (description.length > maxCharLimit) {
+    alert('Description exceeds the maximum limit of 1000 characters.');
+    return;  
+  }
 
   if (name && needed_funding && description) {
     const response = await fetch(`/api/projects`, {
