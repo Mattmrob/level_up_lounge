@@ -12,7 +12,10 @@ const customFormat = printf((
     let timestamp = new Date()
     // .getTime()
     .toUTCString();
-    return `${timestamp} || ${label} [${level}]: "${message}"}`;
+    return `{'timestamp': '${timestamp}',
+'label': '${label}',
+'level': '${level}',
+'message': '${message}'}`;
 });
 
 module.exports =
