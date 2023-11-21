@@ -2,14 +2,20 @@
 
 const { format, createLogger, transports } = require('winston');
 
-const { combine, timestamp, level, printf } = format;
+const { combine, label, printf } = format;
 
 const CATEGORY = 'lul_formatting';
 
 const customFormat = printf((
-    { level, message, label, timestamp}) =>
+    { level, message, label }) =>
 {
-    return `${timestamp} || ${label} [${level}]: "${message}"}`;
+    let timestamp = new Date()
+    // .getTime()
+    .toUTCString();
+    return `{'timestamp': '${timestamp}',
+'label': '${label}',
+'level': '${level}',
+'message': '${message}'}`;
 });
 
 module.exports =
