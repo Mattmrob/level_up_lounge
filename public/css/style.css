@@ -414,6 +414,11 @@ h4 {
   margin-top: 20px; 
   border-bottom: 6px solid black;
 }
+  
+/* -------- LOGIN PAGE END ---------- */
+
+
+/* -------- PROFILE PAGE -------- */
 
 .welcomeContainer {
   display: flex;
@@ -501,8 +506,8 @@ h4 {
     border: 2px solid red;
     cursor: pointer;
   }
-  
-/* -------- LOGIN PAGE END ---------- */
+
+  /* ------ PROFILE PAGE ENDS ------ */
 
 
 /* ------ PROJECT BY ID PAGE BEGINS ------ */
