@@ -16,11 +16,11 @@ const PORT = process.env.PORT || 3001;
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
 // testing purposes
-logger.log(
+logger.info(
   {
     level: 'info',
-    label: 'testing',
-    message: 'Hello Winston!'
+    label: '001',
+    message: 'server initialized'
   }
     );
 
