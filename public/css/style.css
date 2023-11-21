@@ -405,7 +405,7 @@ h4 {
 }
 #post-name,
 #Post-funding, 
-#Post-desc {
+#post-desc {
    background-color: #58586b;
    color: #ebebec
 }
@@ -525,6 +525,7 @@ h4 {
     border: 2px solid red;
     cursor: pointer;
   }
+ 
 
   /* ------ PROFILE PAGE ENDS ------ */
 
