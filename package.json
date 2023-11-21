@@ -21,7 +21,8 @@
     "lodash": "^4.17.21",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5",
-    "winston": "^3.11.0"
+    "winston": "^3.11.0",
+    "winston-daily-rotate-file": "^4.7.1"
   },
   "devDependencies": {
     "eslint": "^7.12.1",
