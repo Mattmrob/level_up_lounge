@@ -403,9 +403,9 @@ h4 {
   margin-bottom: 15px;
   text-align: center; 
 }
-#project-name,
-#project-funding, 
-#project-desc {
+#post-name,
+#Post-funding, 
+#Post-desc {
    background-color: #58586b;
    color: #ebebec
 }
@@ -417,7 +417,7 @@ h4 {
   color: #ebebec;
 }
 .new-game-container,
-.project-list-container {
+.post-list-container {
   background-color: #26262e;
   padding: 20px;  
   border-radius: 30px;  
@@ -433,7 +433,7 @@ h4 {
 #hideSignup {
   display: none;
 }
-  
+
 /* -------- LOGIN PAGE END ---------- */
 
 
@@ -480,14 +480,14 @@ h4 {
     border-bottom: 0px;
   }
 
-  .projectsContainer {
+  .postsContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
 
-  .individualProject {
+  .individualPost {
     background-color: var(--primary-lighter);
     padding: 15px;
     border-radius: 20px;
@@ -495,16 +495,16 @@ h4 {
     margin: 5px 5px 5px 5px;
   }
 
-  .individualProject:hover {
+  .individualPost:hover {
     border-bottom:0px;
     margin-top: 9px;
   }
 
-  .indiProjTitle {
+  .indiPostTitle {
     color: var(--contrast);
   }
 
-  .indiProjTitle:hover {
+  .indiPostTitle:hover {
     color: white;
   }
 
@@ -529,7 +529,7 @@ h4 {
   /* ------ PROFILE PAGE ENDS ------ */
 
 
-/* ------ PROJECT BY ID PAGE BEGINS ------ */
+/* ------ Post BY ID PAGE BEGINS ------ */
 
 .noHoverGlow:hover {
   color: var(--contrast);

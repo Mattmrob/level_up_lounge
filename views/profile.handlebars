@@ -1,5 +1,4 @@
-
-  <div class="welcomeContainer">
+<div class="welcomeContainer">
     <h2 class="welcomeMessage">Welcome, {{name}}!</h2>
 </div>
 
@@ -32,16 +31,13 @@
   <div class="col-md-12 post-list post-list-container">
     <h3>Current Posts:</h3>
 
+    <div class="postsContainer mt-4">
+    
     {{#each posts as |post|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/post/{{post.id}}">{{post.name}}</a></h4>
+      <div class="individualPost">
+        <h4><a class="indiPostTitle" href="/post/{{post.id}}">{{post.name}}</a></h4>
+        <button class="btn btnOverride" data-id="{{post.id}}">DELETE</button>
       </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
-      </div>
-    </div>
-
     {{/each}}
   </div>
   </div>
