@@ -68,7 +68,9 @@ const signupFormHandler = async (event) => {
 
 // function to validate if email is valid
 const isEmail = (password) => {
-  return '/\S+@\S+\.\S{2,3}/, A'.test(password);
+  // \S+ checks for 1-n non-space characters
+  // 
+  return '/\w+@\w+\.\w{2,3}/D'.test(password);
 };
 
 // Function to validate if the password is at least 8 characters long
