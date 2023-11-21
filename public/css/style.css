@@ -433,7 +433,23 @@ h4 {
   }
 
   .individualProject {
-    
+    background-color: var(--primary-lighter);
+    padding: 15px;
+    border-radius: 20px;
+    border-bottom: 4px solid black;
+    margin: 5px 5px 5px 5px;
+  }
+
+  .individualProject:hover {
+    border-bottom:0px;
+    margin-top: 9px;
+  }
+
+  .indiProjTitle {
+    color: var(--contrast);
+  }
+  .indiProjTitle:hover {
+    color: white;
   }
   
 /* -------- LOGIN PAGE END ---------- */
