@@ -9,18 +9,18 @@
   <div class="col-md-12 new-game-container">
     <h3>Create a New Game:</h3>
 
-    <form class="form new-project-form">
+    <form class="form new-post-form">
       <div class="form-group">
-        <label for="project-name">Game Name:</label>
-        <input class="form-input" style="max-width: 650px; width: 100%; margin: 0 auto;" type="text" id="project-name" name="project-name" placeholder="Enter name"/>
+        <label for="post-name">Game Name:</label>
+        <input class="form-input" style="max-width: 650px; width: 100%; margin: 0 auto;" type="text" id="post-name" name="post-name" placeholder="Enter name"/>
       </div>
       <div class="form-group">
-        <label for="project-funding">Devolopment Costs ($):</label>
-        <input class="form-input" style="max-width: 750px; width: 100%; margin: 0 auto;" type="number" id="project-funding" name="project-funding" placeholder="Enter price" />
+        <label for="post-funding">Devolopment Costs ($):</label>
+        <input class="form-input" style="max-width: 750px; width: 100%; margin: 0 auto;" type="number" id="post-funding" name="post-funding" placeholder="Enter price" />
       </div>
       <div class="form-group">
-        <label for="project-desc">Description:</label>
-        <textarea class="form-input" style="max-width: 850px; width: 100%; margin: 0 auto;" id="project-desc" name="project-desc" placeholder="Enter description"></textarea>
+        <label for="post-desc">Description:</label>
+        <textarea class="form-input" style="max-width: 850px; width: 100%; margin: 0 auto;" id="post-desc" name="post-desc" placeholder="Enter description"></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="createButton">Create</button>
@@ -28,17 +28,20 @@
     </form>
   </div>
 
-  {{#if projects.length}}
-  <div class="col-md-12 project-list project-list-container">
+  {{#if posts.length}}
+  <div class="col-md-12 post-list post-list-container">
     <h3>Current Posts:</h3>
 
-    <div class="projectsContainer mt-4">
-    
-    {{#each projects as |project|}}
-      <div class="individualProject">
-        <h4><a class="indiProjTitle" href="/project/{{project.id}}">{{project.name}}</a></h4>
-        <button class="btn btnOverride" data-id="{{project.id}}">DELETE</button>
+    {{#each posts as |post|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/post/{{post.id}}">{{post.name}}</a></h4>
       </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+      </div>
+    </div>
+
     {{/each}}
   </div>
   </div>
