@@ -12,14 +12,74 @@
     <button class="btn btn-primary">Fund this Project!</button>
   </p>
 </div> --}}
-<div class="text-center">
+
+{{!-- <div class="text-center">
   <h2>{{name}}</h2>
   
   <!-- Replace the paragraph with a textarea for the description -->
-  <textarea rows="6" cols="50" readonly>{{description}}</textarea>
+  <textarea rows="6" cols="50" style="overflow-y: scroll; height: 150px; resize: none;">{{description}}</textarea>
 
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
  
-    <button class="btn btn-primary">Fund this Project!</button>
-  </p>
+  <button class="btn btn-primary">Fund this Project!</button>
+</div> --}}
+
+
+
+
+{{!-- <div class="text-center">
+  <h2>{{name}}</h2>
+  
+  <!-- Replace the paragraph with a textarea for the description -->
+  <textarea rows="6" cols="50" class="custom-scrollbar" style="overflow-y: scroll; width: 450px; height: 450px; resize: none;">{{description}}</textarea>
+
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+ </div> --}}
+
+
+{{!-- <div class="text-center">
+  <h2>{{name}}</h2>
+  
+  <!-- Replace the paragraph with a textarea for the description -->
+  <textarea rows="6" class="custom-scrollbar" style="overflow-y: scroll; width: 450px; height: auto; max-height: 450px; resize: none;">{{description}}</textarea>
+
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+ </div> --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LevelUpLounge</title>
+    {{!-- LOGO --}}
+  <div class="logoBlock">
+    <a href="/"><img src="/assets/lul_logo.png" class="lulgo"></a>
+  </div>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("/assets/placeholder.png"); /* Replace with the correct path to your background image */
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif; /* Choose an appropriate font-family */
+      color: #fff; /* Set the default text color for the page */
+    }
+  </style>
+</head>
+<body>
+  <!-- Your content goes here -->
+<div class="project-container">
+  <h2>{{name}}</h2>
+  
+  <!-- Replace the paragraph with a textarea for the description -->
+  <textarea rows="6" class="custom-scrollbar">{{description}}</textarea>
+
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
 </div>
+
+  <!-- End of your content -->
+</body>
+</html>
+
+
