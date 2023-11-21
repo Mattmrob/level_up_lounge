@@ -448,8 +448,26 @@ h4 {
   .indiProjTitle {
     color: var(--contrast);
   }
+
   .indiProjTitle:hover {
     color: white;
+  }
+
+  .btnOverride {
+    color: var(--contrast);
+    background-color: var(--primary-darker);
+    width: 100px;
+    text-align: center;
+    font-size: 1em;
+    font-style: bold;
+    margin-top: 10px;
+    border-bottom: 3px solid black;
+    border-radius: 20px;
+  }
+
+  .btnOverride:hover {
+    background-color: var(--primary-darker);
+    border: 2px solid red;
   }
   
 /* -------- LOGIN PAGE END ---------- */
