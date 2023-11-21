@@ -30,28 +30,30 @@ const signupFormHandler = async (event) => {
   const password = document.querySelector('#password-signup').value.trim();
 
   // Validate username length (between 6 and 18 characters)
-  if (name.length < 6 || name.length > 18) {
-    alert('Username must be between 6 and 18 characters long');
-    return;  
+  if (name.length < 6 || name.length > 18)
+  {
+    alert('Username must be between 6 and 18 characters long');  
   }
-
-    // Validate password
-    if (!isPasswordLengthValid(password)) {
-      alert('Password must be at least 8 characters long');
-      return;
-    }
-  
-    if (!isPasswordNumberValid(password)) {
-      alert('Password must include at least one number');
-      return;
-    }
-  
-    if (!isPasswordSpecialCharacterValid(password)) {
-      alert('Password must include at least one special character');
-      return;
-    }
-
-  if (name && email && password) {
+  // validate email entered
+  else if (!isEmail(email))
+  {
+    alert('Invalid email address')
+  }
+  // Validate password
+  else if (!isPasswordLengthValid(password))
+  {
+    alert('Password must be at least 8 characters long');
+  }
+  else if (!isPasswordNumberValid(password))
+  {
+    alert('Password must include at least one number');
+  }
+  else if (!isPasswordSpecialCharacterValid(password))
+  {
+    alert('Password must include at least one special character');
+  }
+  else
+  {
     const response = await fetch('/api/users', {
       method: 'POST',
       body: JSON.stringify({ name, email, password }),
@@ -64,13 +66,18 @@ const signupFormHandler = async (event) => {
       alert(response.statusText);
     }
   }
+  return false;
 };
 
 // function to validate if email is valid
 const isEmail = (password) => {
-  // \S+ checks for 1-n non-space characters
-  // 
-  return '/\w+@\w+\.\w{2,3}/D'.test(password);
+  // \w+ checks for 1-n word characters (numbers or letter)
+  // @ is the '@' symbol
+  // \. escapes . functionality to find '.' literal
+  // \w{2,3} checks for exactly 2-3 word characters
+  // /D matches from the end
+  const emailRegex = /\w+@\w+\.\w{2,3}/;
+  return emailRegex.test(password);
 };
 
 // Function to validate if the password is at least 8 characters long
