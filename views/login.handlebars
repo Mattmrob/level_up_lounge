@@ -1,11 +1,10 @@
 <div class="row">
-  <div class="col-nodmd-12">
+  <div class="col-md-12">
     <div class="forms-container"style="margin-top: -10px;">
-      <h2 class="custom-text">You need an account to post!</h2>
+      <h2 class="custom-text">Please Login to Post</h2>
 
       <form class="form login-form">
         <div class="form-group">
-          <h4 class="custom-text"> I have an account... </h4>
           <label for="email-login" class="custom-text">Email:</label>
           <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="text" id="email-login" placeholder="Enter your email" />
         </div>
@@ -15,32 +14,49 @@
         </div>
       
         <div class="form-group">
-          <button class="btn btn-primary" id="loginBtn" type="submit" class="custom-text">Login!</button>
+          <button class="btn" id="loginBtn" type="submit" class="custom-text">Login!</button>
         </div> 
       </form>
       <br>
       <hr>
       <br>
-      <h2 class="custom-text">I need an account!</h2>
 
-      <form class="form signup-form">
-        <div class="form-group">
-          <label for="name-signup" class="custom-text">Username must be between 6 -18 characters</label>
-          <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="text" id="name-signup" placeholder="Enter your username" />
-        </div>
-        <div class="form-group">
-          <label for="email-signup" class="custom-text" class="custom-text">Email:</label>
-          <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="text" id="email-signup" placeholder="Enter your email"/>
-        </div>
-        <div class="form-group">
-          <label for="password-signup" class="custom-text">Password must be at least 8 characters long including numbers and special characters</label>
-          <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="password" id="password-signup" placeholder="Enter your password" />
-        </div>
-        <div class="form-group">
-          <button class="btn btn-primary" id="createBtn" type="submit" class="custom-text">Create Account!</button>
-        </div>
-      </form>
+  
+      <h2 class="custom-text" id="accSignup">I need an account!</h2>
+      {{!-- click h2 to display signup --}}
+
+      <div id="hideSignup">
+
+        <form class="form signup-form">
+          <div class="form-group">
+            <label for="name-signup" class="custom-text" id="usernamelbl">Username must be between 6 -18 characters</label>
+            <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="text" id="name-signup" placeholder="Enter your username" />
+          </div>
+          <div class="form-group">
+            <label for="email-signup" class="custom-text" class="custom-text" id="emaillbl">Email:</label>
+            <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="text" id="email-signup" placeholder="Enter your email"/>
+          </div>
+          <div class="form-group">
+            <label for="password-signup" class="custom-text" id="passwordlbl">Password must be at least 8 characters long including numbers and special characters</label>
+            <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="password" id="password-signup" placeholder="Enter your password" />
+          </div>
+          <div class="form-group">
+            <label for="password-signup2" class="custom-text" id="reEnterPw">Please re-enter your password</label>
+            <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="password" id="password-signup2" placeholder="Enter your password again" />
+          </div>
+          <div class="form-group">
+            <button class="btn" id="createBtn" type="submit" class="custom-text">Create Account!</button>
+          </div>
+        </form>
+
+      </div>
+      {{!-- hide signup ends here ^^^ --}}
+
     </div>
   </div>
 </div>
+
+  {{!-- <button>Return to Lounge</button>
+  <p>You cannot post if you are not logged in!</p> --}}
+
 <script src="./js/login.js"></script>

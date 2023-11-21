@@ -1,3 +1,23 @@
+// hides loginblock when on login page (you dont need to go there if you are there, and its just confusing)
+document.querySelector('.loginBlock').style.display = 'none';
+
+// login account page toggle starts
+let toggle = 1;
+
+document.querySelector('#accSignup').addEventListener('click', () => {
+
+  if (toggle === 1) {
+    document.querySelector('#hideSignup').style.display = 'initial';
+    toggle = 0;
+  } else if (toggle === 0) {
+    document.querySelector('#hideSignup').style.display = 'none';
+    toggle = 1
+  };
+
+});
+// login account page toggle ends
+
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
@@ -28,32 +48,62 @@ const signupFormHandler = async (event) => {
   const name = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
+  const password2 = document.querySelector('#password-signup2').value.trim();
 
   // Validate username length (between 6 and 18 characters)
-  if (name.length < 6 || name.length > 18)
-  {
-    alert('Username must be between 6 and 18 characters long');  
+  if (name.length < 6 || name.length > 18) {
+    document.querySelector("#usernamelbl").innerHTML = 'Your username must be between 6 and 18 characters!';
+    document.querySelector("#usernamelbl").style.color = 'red';
+    console.log("namelength bad");
+    return;  
+  } else {
+    document.querySelector("#usernamelbl").innerHTML = 'Your username is valid';
+    document.querySelector("#usernamelbl").style.color = 'green';
+    console.log("namelength good");
   }
-  // validate email entered
-  else if (!isEmail(email))
-  {
-    alert('Invalid email address')
+
+  if (email) {
+    document.querySelector("#emaillbl").innerHTML = 'Your email is valid.... probably?';
+    document.querySelector("#emaillbl").style.color = 'green';
+    console.log("email good");
   }
-  // Validate password
-  else if (!isPasswordLengthValid(password))
-  {
-    alert('Password must be at least 8 characters long');
-  }
-  else if (!isPasswordNumberValid(password))
-  {
-    alert('Password must include at least one number');
-  }
-  else if (!isPasswordSpecialCharacterValid(password))
-  {
-    alert('Password must include at least one special character');
-  }
-  else
-  {
+
+    // Validate password
+    if (!isPasswordLengthValid(password)) {
+      document.querySelector("#passwordlbl").innerHTML = 'Password must be at least 8 characters long';
+      document.querySelector("#passwordlbl").style.color = 'red';
+      console.log("passwordlength bad");
+      return;
+    }
+  
+    if (!isPasswordNumberValid(password)) {
+      document.querySelector("#passwordlbl").innerHTML = 'Password must include at least one number';
+      document.querySelector("#passwordlbl").style.color = 'red';
+      console.log("passwordnums bad");
+      return;
+    }
+  
+    if (!isPasswordSpecialCharacterValid(password)) {
+      document.querySelector("#passwordlbl").innerHTML = 'Password must include at least one special character';
+      document.querySelector("#passwordlbl").style.color = 'red';
+      console.log("password needs special char");
+      return;
+    } else {
+      document.querySelector("#passwordlbl").innerHTML = 'Your Password is valid';
+      document.querySelector("#passwordlbl").style.color = 'green';
+    }
+
+    // check passwords match
+    if (password !== password2) {
+      document.querySelector("#reEnterPw").innerHTML = 'Your Passwords do not match!';
+      document.querySelector("#reEnterPw").style.color = 'red';
+    return;
+    } else {
+      document.querySelector("#reEnterPw").innerHTML = 'Your Passwords Matched';
+      document.querySelector("#reEnterPw").style.color = 'green';
+    }
+
+  if (name && email && password) {
     const response = await fetch('/api/users', {
       method: 'POST',
       body: JSON.stringify({ name, email, password }),
