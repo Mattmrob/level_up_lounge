@@ -1,7 +1,4 @@
 // login account page toggle starts
-const needAcc = document.getElementById("#accSignup");
-const signup = document.getElementById("#hideSignup");
-
 let toggle = 1;
 
 document.querySelector('#accSignup').addEventListener('click', () => {
@@ -49,6 +46,7 @@ const signupFormHandler = async (event) => {
   const name = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
+  const password2 = document.querySelector('#password-signup2').value.trim();
 
 
   // Validate username length (between 6 and 18 characters)
@@ -71,6 +69,16 @@ const signupFormHandler = async (event) => {
     if (!isPasswordSpecialCharacterValid(password)) {
       alert('Password must include at least one special character');
       return;
+    }
+
+    // check passwords match
+    if (password !== password2) {
+      document.querySelector("#reEnterPw").innerHTML = 'Your Passwords do not match!';
+      document.querySelector("#reEnterPw").style.color = 'red';
+    return;
+    } else {
+      document.querySelector("#reEnterPw").innerHTML = 'Your Passwords Matched';
+      document.querySelector("#reEnterPw").style.color = 'green';
     }
 
   if (name && email && password) {

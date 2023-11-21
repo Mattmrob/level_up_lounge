@@ -346,7 +346,8 @@ a:hover {
 #password-login,
 #name-signup,
 #email-signup,
-#password-signup {
+#password-signup,
+#password-signup2 {
   border-radius: 20px;
 }
 .btn {
@@ -378,8 +379,18 @@ hr {
 #loginBtn, 
 #createBtn {
   display: block;
-  margin: 0 auto;
-  padding: 15px 50px
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  padding: 10px 35px;
+  border: 0px;
+  border-bottom: 4px solid black;
+  font-weight: 500;
+}
+#loginBtn:hover,
+#createBtn:hover {
+  border-bottom: 0px;
+  margin-top: 29px;
 }
 
 h2,
