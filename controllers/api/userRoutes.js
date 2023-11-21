@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const logger = require('../../utils/winston/logger.js');
 
 router.post('/', async (req, res) => {
   try {
@@ -12,7 +13,12 @@ router.post('/', async (req, res) => {
       res.status(200).json(userData);
     });
   } catch (err) {
-    console.log('|| Error at /api/ ||\n');
+    logger.error({
+      level: 'error',
+      label: '400',
+      message: err
+    }
+      );
     res.status(400).json(err);
   }
 });
@@ -22,9 +28,16 @@ router.post('/login', async (req, res) => {
     const userData = await User.findOne({ where: { email: req.body.email } });
 
     if (!userData) {
+      const err = 'Incorrect email or password, please try again'
       res
         .status(400)
-        .json({ message: 'Incorrect email or password, please try again' });
+        .json({ message: err });
+        logger.error({
+          level: 'error',
+          label: '400',
+          message: err
+        }
+          );
       return;
     }
 
