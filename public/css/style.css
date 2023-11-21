@@ -407,6 +407,26 @@ h4 {
 }
   /* -------- LOGIN PAGE END ---------- */
 
+/* ----- Project Page ----- */
+.project-container {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  color: white; /* Set the text color to ensure visibility on the background image */
+  padding: 20px; /* Adjust padding as needed */
+}
+
+textarea.custom-scrollbar {
+  width: 450px;
+  height: 200px;
+  resize: none;
+  overflow-y: scroll; /* Allow vertical scrolling only */
+}
+
+body .lulgo {
+}
+
+
 
 /* ------- BODY DETECTORS ------- */
 
@@ -423,6 +443,8 @@ h4 {
 }
 
 /* ----- END DETECTORS ----- */
+
+
 
 
 /* TEMPLATE CODE */
@@ -450,3 +472,4 @@ header, .project:not(:last-child) {
   font-weight: bold;
   margin-left: -5px;
 }
+
