@@ -29,7 +29,6 @@ const signupFormHandler = async (event) => {
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
 
-
   // Validate username length (between 6 and 18 characters)
   if (name.length < 6 || name.length > 18) {
     alert('Username must be between 6 and 18 characters long');
@@ -65,6 +64,11 @@ const signupFormHandler = async (event) => {
       alert(response.statusText);
     }
   }
+};
+
+// function to validate if email is valid
+const isEmail = (password) => {
+  return '/\S+@\S+\.\S{2,3}/, A'.test(password);
 };
 
 // Function to validate if the password is at least 8 characters long
