@@ -15,13 +15,13 @@ routing conflicts when importing from style.css
 This is currently bugged and does not work on the Posts page --}}
 <style>
   .backgroundImage {
-  background-image: url("assets/placeholder.png");
+  background-image: url("../assets/background.png");
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   background-size: cover;
   position: fixed;
-  z-index: 0;
+  z-index: -1;
 }
 </style>
 
@@ -31,7 +31,7 @@ This is currently bugged and does not work on the Posts page --}}
 
   {{!-- LOGO --}}
   <div class="logoBlock">
-    <a href="/"><img src="assets/lul_logo.png" alt="Level Up Lounge Logo" class="lulgo"></a>
+    <a href="/"><img src="../assets/lul_logo.png" alt="Level Up Lounge Logo" class="lulgo"></a>
   </div>
 
   {{!-- LOGIN --}}
