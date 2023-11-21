@@ -415,14 +415,45 @@ h4 {
   border-bottom: 6px solid black;
 }
 
+.welcomeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .welcomeMessage {
   color: var(--contrast);
   font-size: 2em;
+  width: 100%;
+  max-width: 800px;
   border-radius: 1000px;
   border-bottom: 5px solid black;
   border-top: 1.5px solid var(--primary-lighter);
-  padding: 0px 0px 5px 0px;
+  padding: 8px 8px 8px 8px;
   background-color: var(--primary-darker);
+  }
+
+  .createButton {
+    width: 130px;
+    height: 40px;;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    font-size: 1.5em;
+    font-weight: 400;
+    border-radius: 20px;
+    color: var(--contrast);
+    background-color: var(--primary-lighter);
+    border: 0px;
+    border-bottom: 3px solid black;
+  }
+
+  .createButton:hover {
+    border-bottom: 0px;
+    margin-top: 18px;
+    margin-bottom: 0px;
+    border-bottom: 0px;
   }
 
   .projectsContainer {
@@ -459,7 +490,7 @@ h4 {
     width: 100px;
     text-align: center;
     font-size: 1em;
-    font-style: bold;
+    font-weight: 400;
     margin-top: 10px;
     border-bottom: 3px solid black;
     border-radius: 20px;
@@ -468,6 +499,7 @@ h4 {
   .btnOverride:hover {
     background-color: var(--primary-darker);
     border: 2px solid red;
+    cursor: pointer;
   }
   
 /* -------- LOGIN PAGE END ---------- */
