@@ -17,8 +17,7 @@ router.post('/', async (req, res) => {
       level: 'error',
       label: '400',
       message: err
-    }
-      );
+    });
     res.status(400).json(err);
   }
 });
@@ -36,8 +35,7 @@ router.post('/login', async (req, res) => {
           level: 'error',
           label: '400',
           message: err
-        }
-          );
+        });
       return;
     }
 
