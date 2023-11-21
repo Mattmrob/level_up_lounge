@@ -412,7 +412,29 @@ h4 {
   border-radius: 30px;  
   color: white;  
   margin-top: 20px; 
+  border-bottom: 6px solid black;
 }
+
+.welcomeMessage {
+  color: var(--contrast);
+  font-size: 2em;
+  border-radius: 1000px;
+  border-bottom: 5px solid black;
+  border-top: 1.5px solid var(--primary-lighter);
+  padding: 0px 0px 5px 0px;
+  background-color: var(--primary-darker);
+  }
+
+  .projectsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .individualProject {
+    
+  }
   
 /* -------- LOGIN PAGE END ---------- */
 
