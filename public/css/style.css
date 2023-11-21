@@ -329,7 +329,7 @@ a:hover {
 /* -------- LOGIN PAGE START ---------- */
 
 .custom-text {
-  color: #ebebec
+  color: var(--contrast);
 }
 #email-login,
 #password-login,
@@ -370,11 +370,10 @@ hr {
 
 .forms-container {
   background-color: #26262e;
-  padding: 50px;
+  padding: 35px 20px 35px 20px;
   border: 3px solid black;
   border-radius: 25px; 
   text-align: center;
-  margin: 120px;
 }
 #loginBtn, 
 #createBtn {
@@ -413,6 +412,14 @@ h4 {
   color: white;  
   margin-top: 20px; 
   border-bottom: 6px solid black;
+}
+
+#accSignup:hover {
+  cursor: pointer;
+}
+
+#hideSignup {
+  display: none;
 }
   
 /* -------- LOGIN PAGE END ---------- */

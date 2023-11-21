@@ -20,25 +20,34 @@
       <br>
       <hr>
       <br>
-      <h2 class="custom-text" id="accSignup">I need an account!</h2>
 
-      <form class="form signup-form">
-        <div class="form-group">
-          <label for="name-signup" class="custom-text">Username must be between 6 -18 characters</label>
-          <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="text" id="name-signup" placeholder="Enter your username" />
-        </div>
-        <div class="form-group">
-          <label for="email-signup" class="custom-text" class="custom-text">Email:</label>
-          <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="text" id="email-signup" placeholder="Enter your email"/>
-        </div>
-        <div class="form-group">
-          <label for="password-signup" class="custom-text">Password must be at least 8 characters long including numbers and special characters</label>
-          <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="password" id="password-signup" placeholder="Enter your password" />
-        </div>
-        <div class="form-group">
-          <button class="btn btn-primary" id="createBtn" type="submit" class="custom-text">Create Account!</button>
-        </div>
-      </form>
+  
+      <h2 class="custom-text" id="accSignup">I need an account!</h2>
+      {{!-- click h2 to display signup --}}
+
+      <div id="hideSignup">
+
+        <form class="form signup-form">
+          <div class="form-group">
+            <label for="name-signup" class="custom-text">Username must be between 6 -18 characters</label>
+            <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="text" id="name-signup" placeholder="Enter your username" />
+          </div>
+          <div class="form-group">
+            <label for="email-signup" class="custom-text" class="custom-text">Email:</label>
+            <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="text" id="email-signup" placeholder="Enter your email"/>
+          </div>
+          <div class="form-group">
+            <label for="password-signup" class="custom-text">Password must be at least 8 characters long including numbers and special characters</label>
+            <input class="form-input btn-style" style="max-width: 750px; width: 100%; margin: 0 auto;" type="password" id="password-signup" placeholder="Enter your password" />
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary" id="createBtn" type="submit" class="custom-text">Create Account!</button>
+          </div>
+        </form>
+
+      </div>
+      {{!-- hide signup ends here ^^^ --}}
+
     </div>
   </div>
 </div>

@@ -1,3 +1,24 @@
+// login account page toggle starts
+const needAcc = document.getElementById("#accSignup");
+const signup = document.getElementById("#hideSignup");
+
+let toggle = 1;
+
+document.querySelector('#accSignup').addEventListener('click', () => {
+
+  console.log("it worked");
+
+  if (toggle === 1) {
+    document.querySelector('#hideSignup').style.display = 'initial';
+    toggle = 0;
+  } else if (toggle === 0) {
+    document.querySelector('#hideSignup').style.display = 'none';
+    toggle = 1
+  };
+
+});
+// login account page toggle ends
+
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
