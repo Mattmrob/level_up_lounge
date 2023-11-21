@@ -1,27 +1,22 @@
 [
   {
     "name": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 5000
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area."
   },
   {
     "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 10000
+    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
   },
   {
     "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 800
+    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
   },
   {
     "name": "Mario Kart",
-    "description": "what if like we made a game where all the mario characters sort of race & battle it out. also bowser is there and like there are different cups for differnt map combos",
-    "needed_funding": 1000000000
+    "description": "what if like we made a game where all the mario characters sort of race & battle it out. also bowser is there and like there are different cups for differnt map combos"
   },
   {
     "name": "Atlas' Atlas",
-    "description": "A game where you place tiles together, then try to build a village to survive an ever-toughening world.",
-    "needed_funding": 50000
+    "description": "A game where you place tiles together, then try to build a village to survive an ever-toughening world."
   }
 ]
