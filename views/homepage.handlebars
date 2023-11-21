@@ -1,13 +1,13 @@
-<!-- Loop over each object in the projects array -->
-{{#each projects as |project| }}
+<!-- Loop over each object in the posts array -->
+{{#each posts as |post| }}
   <div class="col-md-12 mb-5 postCardEntire">
       <h2 class="postTitleSection">
-        <a class="postTitle" href="/project/{{project.id}}">{{project.name}}</a>
+        <a class="postTitle" href="/post/{{post.id}}">{{post.name}}</a>
       </h2>
       <div class="titleBorder"></div>
-      <p class="postAuthor">Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+      <p class="postAuthor">Created by {{post.user.name}} on {{format_date post.date_created}}</p>
       <p class="postDescription">
-        {{project.description}}
+        {{post.description}}
       </p>
     <div class="postVotes">
       {{!-- <button class="upvote">Dvote</button>
