@@ -53,7 +53,7 @@ router.post('/login', async (req, res) => {
     });
 
   } catch (err) {
-    logger.error({ level: 'error', label: '400', message: `${userData.id} logged in`});
+    // logger.error({ level: 'error', label: '400', message: `${userData.id} logged in`});
     res.status(400).json(err);
   }
 });
