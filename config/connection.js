@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
+logger = require('../utils/winston/logger');
 
 let sequelize;
 
@@ -35,10 +36,16 @@ let sequelize;
   sequelize
   .authenticate()
   .then(() => {
-    console.log('Connection has been established successfully.');
+    logger.info({
+      level: 'info',
+      label: '200', 
+      message: 'Connection has been established successfully.'});
   })
   .catch(err => {
-    console.error('Unable to connect to the database:', err);
+    logger.error({
+      level: 'error',
+      label: '500', 
+      message: err});
   });
 
 // END HEROKU DEPLOY CODE
