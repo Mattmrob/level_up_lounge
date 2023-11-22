@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./server.js",
+    "start": "node ./server.js",
     "seed": "node seeds/seed.js"
   },
   "keywords": [],
@@ -20,6 +19,7 @@
     "express-session": "^1.17.1",
     "lodash": "^4.17.21",
     "mysql2": "^2.2.5",
+    "pg": "^8.11.3",
     "sequelize": "^6.3.5",
     "winston": "^3.11.0",
     "winston-daily-rotate-file": "^4.7.1"
