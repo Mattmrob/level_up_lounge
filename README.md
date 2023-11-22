@@ -12,12 +12,11 @@ Level Up Lounge is a social media site for people, who love gaming, and wish to 
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
 
 
 ## Installation
-The site requires a browser with internet connection to access. The site is built using a modularized Node.js application with MySQL database, Express.js routing, and Handlebars. The database uses Sequelize as an ORM, Winston for logging, and bcyrpt for user data encryption with environmental variables.
+The site requires a browser with internet connection to access. 
 
 ## Usage
 The site requires a user be logged in to interact with posts. Posts can be upvoted or downvoted and are displayed in the user's feed in descending order with regard to the number of upvotes. Once logged in the user has the option to create posts, interact with them, and respond to them.
@@ -51,9 +50,6 @@ SOFTWARE.
 
 ## Contributing
 Please reach out to the developers via GitHub or email addresses provided below in #questions
-
-## Tests
-*** Are we going to test this using Jest?
 
 ## Questions
 For questions about this project, please reach out to the developers of Level Up Lounge on GitHub or via e-mail, 
