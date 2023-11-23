@@ -11,21 +11,31 @@ Level Up Lounge is a social media site for people, who love gaming, and wish to 
 - [Usage](#usage)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
+- [Contributions](#contributions)
 - [Questions](#questions)
 
 
 ## Installation
-The site requires a browser with internet connection to access. 
+The site requires a browser with internet connection to access. The site allows a user to view posts without signing in, but posting requires a valid e-mail address and password combination.
 
 ## Usage
-The site requires a user be logged in to interact with posts. Posts can be upvoted or downvoted and are displayed in the user's feed in descending order with regard to the number of upvotes. Once logged in the user has the option to create posts, interact with them, and respond to them.
+Anyone with a browser may navigate to the site and view posts. The site requires a user be logged in to create post. There are plans to implement an upvote/downvote system in future developments, but those are not active on the site yet. 
 
-![Homepage Screenshot](homepage_image_placeholder)
+Logged Out Viewing Homepage: 
 
-![Login page Screenshot](homepage_image_placeholder)
+![Logged Out Screenshot](./public/assets/logged_out.png)
 
-![Detailed Post Screenshot](homepage_image_placeholder)
+Login or Signup: 
+
+![Login/Signup Screenshot](./public/assets/login_signup.png)
+
+Create New Post: 
+
+![Create New Post Screenshot](./public/assets/create_new.png)
+
+Post Created:
+
+![Post Created Screenshot](./public/assets/new_created.png)
 
 ## License
 Copyright (c) <2023> <copyright Peter Martinez, Steven Reed, Matthew Roberts, Kenneth Wong>
@@ -48,11 +58,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Contributing
-Please reach out to the developers via GitHub or email addresses provided below in #questions
+## Contributions
+This project used the UC Berkeley mini-project-template as a base of starter code under the recommendation of our instructor Emmanuel Jucaban. All other code was written using primary documentation and referenced materials from our coursework.
 
 ## Questions
-For questions about this project, please reach out to the developers of Level Up Lounge on GitHub or via e-mail, 
+Please reach out to the developers via GitHub or email addresses provided below for contributions, or questions about this project, please reach out to the developers of Level Up Lounge on GitHub or via e-mail, 
 
 Peter Martinez: 
 https://github/reasonablep |
